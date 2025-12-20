@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kişisel Tanıtım | Portföy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root{
+            --bg:#0f1724;
+            --card:#020617;
+            --accent:#60a5fa;
+            --text:#e6eef8;
+            k
+            --muted:#94a3b8;
+        }
+
+        *{box-sizing:border-box}
+
+        body{
+            margin:0;
+            font-family:system-ui, Arial;
+            background:var(--bg);
+            color:var(--text);
+            line-height:1.6;
+        }
+
+        header{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        header h1{
+            margin:0;
+            font-size:2.5rem;
+        }
+
+        header p{
+            color:var(--muted);
+            max-width:600px;
+            margin:15px auto 0;
+        }
+
+        nav{
+            background:#020617;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            padding:12px;
+            position:sticky;
+            top:0;
+        }
+
+        nav a{
+            color:var(--accent);
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        section{
+            max-width:900px;
+            margin:auto;
+            padding:50px 20px;
+        }
+
+        .card{
+            background:var(--card);
+            border-radius:14px;
+            padding:25px;
+            margin-bottom:25px;
+        }
+
+        h2{
+            margin-top:0;
+        }
+
+        .skills{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+            gap:15px;
+        }
+
+        .skill{
+            background:#0f1724;
+            padding:12px;
+            border-radius:10px;
+            text-align:center;
+            font-weight:600;
+        }
+
+        .projects{
+            display:grid;
+            gap:20px;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:var(--muted);
+            background:#020617;
+        }
+
+        @media(max-width:600px){
+            header h1{font-size:2rem}
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO / TANITIM -->
+<header>
+    <h1>Ad Soyad</h1>
+    <p>
+        Web geliştirme öğreniyorum.  
+        HTML, CSS ve JavaScript ile modern ve sade projeler geliştiriyorum.
+    </p>
+</header>
+
+<!-- MENÜ -->
+<nav>
+    <a href="#about">Hakkımda</a>
+    <a href="#skills">Yetenekler</a>
+    <a href="#projects">Projeler</a>
+    <a href="#contact">İletişim</a>
+</nav>
+
+<!-- HAKKIMDA -->
+<section id="about">
+    <div class="card">
+        <h2>Hakkımda</h2>
+        <p>
+            Merhaba! Ben web geliştirme alanında kendimi geliştiren biriyim.
+            Küçük projeler yaparak pratik kazanıyor ve her gün yeni şeyler öğreniyorum.
+            Günden güne daha iyi bir geliştirici olmayı hedeflniyorum.
+        </p>
+    </div>
+</section>
+
+<!-- YETENEKLER -->
+<section id="skills">
+    <div class="card">
+        <h2>Yetenekler</h2>
+        <div class="skills">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Python</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJELER -->
+<section id="projects">
+    <div class="card">
+        <h2>Projeler</h2>
+        <div class="projects">
+            <div>
+                <strong>Mini Blog</strong>
+                <p>LocalStorage kullanan basit blog uygulaması.</p>
+            </div>
+            <div>
+                <strong>Kişisel Tanıtım Sitesi</strong>
+                <p>Responsive, sade ve modern tasarım.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- İLETİŞİM -->
+<section id="contact">
+    <div class="card">
+        <h2>İletişim</h2>
+        <p>Email: <strong>cobanmedine804@gmail.com</strong></p>
+        <p>GitHub: <strong><a href="https://github.com/cobanmedine804-sso">cobanmedine804-sso</a></strong></p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Ad Soyad | Kişisel Portföy
+</footer>
+
+</body>
+</html>
+
+
+
