@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* GENEL ALAN */
+.container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+/* BAŞLIK */
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.meta {
+  color: #94a3b8;
+  margin-bottom: 35px;
+  font-size: 0.95rem;
+}
+
+/* KART GENEL */
+.card {
+  background: rgba(2, 6, 23, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+
+/* INPUT & TEXTAREA */
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* BUTON */
+button {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #020617;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99,102,241,0.4);
+}
+
+/* BLOG YAZISI */
+.post {
+  background: linear-gradient(180deg, #020617, #020617);
+  border-radius: 20px;
+  padding: 26px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.post h2 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.post .date {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 18px;
+}
+
+.post p {
+  line-height: 1.9;
+  font-size: 1rem;
+  color: #e5e7eb;
+}
+
+/* SİL BUTONU */
+.post button {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  margin-top: 18px;
+}
+
+.post button:hover {
+  background: #ef4444;
+  color: #020617;
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0 30px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  background-color: #020617;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+.search-box::placeholder {
+  color: #64748b;
+}
+
