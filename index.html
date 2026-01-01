@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Kişisel Tanıtım | Portföy</title>
+    <title>Disiplin | Gerçek Hayatta Üretkenlik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
@@ -11,7 +11,6 @@
             --card:#020617;
             --accent:#60a5fa;
             --text:#e6eef8;
-            
             --muted:#94a3b8;
         }
 
@@ -49,16 +48,29 @@
             padding:12px;
             position:sticky;
             top:0;
+            z-index:10;
         }
 
         nav a{
             color:var(--accent);
             text-decoration:none;
             font-weight:600;
+            position:relative;
         }
 
-        nav a:hover{
-            text-decoration:underline;
+        nav a::after{
+            content:"";
+            position:absolute;
+            left:0;
+            bottom:-4px;
+            width:0;
+            height:2px;
+            background:var(--accent);
+            transition:width .3s ease;
+        }
+
+        nav a:hover::after{
+            width:100%;
         }
 
         section{
@@ -112,7 +124,6 @@
 
 <body>
 
-<!-- HERO / TANITIM -->
 <header>
     <h1>Disiplin motive olmak değildir.</h1>
     <p>
@@ -121,38 +132,38 @@
     </p>
 </header>
 
-
-<!-- MENÜ -->
 <nav>
   <a href="#yazilar">Yazılar</a>
   <a href="#disiplin">Disiplin</a>
   <a href="#araclar">Araçlar</a>
   <a href="#neden">Neden Bu Blog?</a>
 </nav>
+
 <section id="yazilar">
   <h2 style="margin-bottom:30px;">Yazılar</h2>
+
+  <section class="card">
+    <h2>Uyku düzenin yoksa disiplinli olamaz mısın?</h2>
+    <p><em>Ocak 2026 · 4 dk</em></p>
+
+    <p>
+      Disiplin çoğu zaman sabah erken kalkmakla karıştırılır.
+      Oysa herkesin sabahı yoktur.
+    </p>
+
+    <p>
+      Bazıları geç uyur, bazıları uykusuz çalışır,
+      bazıları ise düzen kurana kadar dağınıktır.
+      Bu onları değersiz yapmaz.
+    </p>
+
+    <p>
+      Disiplin, ideal şartlarda değil,
+      zor şartlarda devam edebilme yeteneğidir.
+    </p>
+  </section>
 </section>
 
-<section id="yazi1" class="card">
-  <h2>Uyku düzenin yoksa disiplinli olamaz mısın?</h2>
-  <p><em>Ocak 2026 · 4 dk</em></p>
-
-  <p>
-    Disiplin çoğu zaman sabah erken kalkmakla karıştırılır.
-    Oysa herkesin sabahı yoktur.
-  </p>
-
-  <p>
-    Bazıları geç uyur, bazıları uykusuz çalışır,
-    bazıları ise düzen kurana kadar dağınıktır.
-    Bu onları değersiz yapmaz.
-  </p>
-
-  <p>
-    Disiplin, ideal şartlarda değil,
-    zor şartlarda devam edebilme yeteneğidir.
-  </p>
-</section>
 <section id="disiplin">
   <div class="card">
     <h2>Disiplin</h2>
@@ -167,6 +178,7 @@
     </ul>
   </div>
 </section>
+
 <section id="araclar">
   <div class="card">
     <h2>Araçlar</h2>
@@ -182,71 +194,28 @@
   </div>
 </section>
 
-
-
-<!-- HAKKIMDA -->
 <section id="neden">
-    <div class="card">
-        <h2>Neden Bu Blog?</h2>
-        <p>
-            Çünkü herkesin şartları eşit değil.
-            Ama devam etme ihtiyacı ortak.
-        </p>
-        <p>
-            Bu blog motive etmek için değil,
-            gerçekçi bir yol haritası sunmak için var.
-        </p>
-    </div>
-</section>
-
-
-<!-- YETENEKLER -->
-<section id="skills">
-    <div class="card">
-        <h2>Yetenekler</h2>
-        <div class="skills">
-            <div class="skill">HTML5</div>
-            <div class="skill">CSS3</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Responsive Design</div>
-            <div class="skill">Git & GitHub</div>
-            <div class="skill">Python</div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJELER -->
-<section id="projects">
-    <div class="card">
-        <h2>Projeler</h2>
-        <div class="projects">
-            <div>
-                <strong>Mini Blog</strong>
-                <p>LocalStorage kullanan basit blog uygulaması.</p>
-            </div>
-            <div>
-                <strong>Kişisel Tanıtım Sitesi</strong>
-                <p>Responsive, sade ve modern tasarım.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- İLETİŞİM -->
-<section id="contact">
-    <div class="card">
-        <h2>İletişim</h2>
-        <p>Email: <strong>cobanmedine804@gmail.com</strong></p>
-        <p>GitHub: <strong><a href="https://github.com/cobanmedine804-sso">cobanmedine804-sso</a></strong></p>
-    </div>
+  <div class="card">
+    <h2>Neden Bu Blog?</h2>
+    <p>
+      Çünkü herkesin şartları eşit değil.
+      Ama devam etme ihtiyacı ortak.
+    </p>
+    <p>
+      Bu blog motive etmek için değil,
+      gerçekçi bir yol haritası sunmak için var.
+    </p>
+  </div>
 </section>
 
 <footer>
-    © 2025 Ad Soyad | Kişisel Portföy
+    © 2026 · Şartlar düzelince değil, vazgeçmeyince ilerlersin.
 </footer>
 
 </body>
 </html>
+
+
 
 
 
