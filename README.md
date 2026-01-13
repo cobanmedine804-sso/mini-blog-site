@@ -1,1 +1,1 @@
-![uykusuz-calısma](https://github.com/user-attachments/assets/22230ec1-4063-4daf-92b8-f50027d8a62e)
+![uykusuz-calısma](https://github.com/user-attachments/assets/565f69f7-deaa-4050-8945-59cb6b7af355)
