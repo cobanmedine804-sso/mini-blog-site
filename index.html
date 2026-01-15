@@ -34,7 +34,7 @@
 
         header h1{
             margin:0;
-            font-size:2.5rem;
+            font-size:2.4rem;
         }
 
         header p{
@@ -101,17 +101,22 @@
             color:var(--muted);
         }
 
+        /* === GÖRSEL AYARLARI === */
+        .blog-image{
+            max-width:680px;
+            width:100%;
+            display:block;
+            margin:20px auto;
+            border-radius:12px;
+            filter:brightness(0.75) saturate(0.85);
+            opacity:0.9;
+        }
+
         footer{
             text-align:center;
             padding:30px;
             color:var(--muted);
             background:#020617;
-        }
-
-        img{
-            max-width:100%;
-            border-radius:14px;
-            margin:20px 0;
         }
 
         @media(max-width:600px){
@@ -135,7 +140,8 @@
     </p>
 
     <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1200&auto=format&fit=crop"
-         alt="Gece sessiz çalışma">
+         alt="Gece sessiz çalışma"
+         class="blog-image">
 </header>
 
 <nav>
@@ -153,7 +159,8 @@
     <p><em>Ocak 2026 · 4 dk</em></p>
 
     <img src="https://images.unsplash.com/photo-1494173853739-c21f58b16055?q=80&w=870&auto=format&fit=crop"
-         alt="Gece çalışan kişi">
+         alt="Gece çalışan kişi"
+         class="blog-image">
 
     <p>
       Hepimiz “motive olursam yaparım” deriz.
@@ -233,6 +240,8 @@
 
 </body>
 </html>
+
+
 
 
 
